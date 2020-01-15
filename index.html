@@ -107,7 +107,28 @@
     </form>
   </div>
 
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyB4hCmDVuyKBVzDbtWP61PZoXE4icDT-gc",
+      authDomain: "pwa-temp-b9c71.firebaseapp.com",
+      databaseURL: "https://pwa-temp-b9c71.firebaseio.com",
+      projectId: "pwa-temp-b9c71",
+      storageBucket: "pwa-temp-b9c71.appspot.com",
+      messagingSenderId: "1018246124392",
+      appId: "1:1018246124392:web:ace171c525ecdb59487cdd",
+      measurementId: "G-8BWE0QPWZ6"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+
   <script src="/js/app.js"></script>
+  <script src="/js/db.js"></script>
   <script src="/js/ui.js"></script>
 </body>
 </html>
